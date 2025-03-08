@@ -22,7 +22,8 @@ Each implementation processes flow data and computes estimation accuracy using r
 ### **2. CountSketch**
 - Similar to CountMin, but assigns a **random ±1 sign** to each counter update.
 - Uses **median estimation** across hashed values to reduce bias.
-- Computes **average error** and **top 100 largest flows** based on estimated size.
+- Computes **average error** between estimated and actual flow sizes.
+- Outputs **top 100 largest flows** based on estimated size.
 
 ### **3. Active Counter**
 - Uses **32-bit space**, divided into:
@@ -82,7 +83,7 @@ Each execution generates an output file:
 
 ### **Example CountMin / CountSketch Output (`countMin_output.txt`)**
 ```
-Average Error: 150.52   # Average error
+Average Error: 121.80   # Average error
 68.64.22.136 11093 7262 # FlowID, Estimated Size, True Size
 ...
 ```
