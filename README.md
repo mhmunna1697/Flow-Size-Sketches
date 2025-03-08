@@ -84,7 +84,8 @@ Each execution generates an output file:
 ### **Example CountMin / CountSketch Output (`countMin_output.txt`)**
 ```
 Average Error: 121.80   # Average error
-68.64.22.136 11093 7262 # FlowID, Estimated Size, True Size
+104.17.183.118 10490 9956   # FlowID, Estimated Size, True Size
+187.237.14.200 10331 9747 
 ...
 ```
 
